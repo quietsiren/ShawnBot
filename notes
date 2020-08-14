@@ -1,0 +1,47 @@
+# guild = ctx.message.guild
+# for member in ctx.bot.get_all_member():
+#     print(member)
+# allMbrs = []
+# for user in ctx.message.guild:
+    # print(user)
+    # allMbrs.append(user)
+# print(allMbrs)
+# await ctx.send(user)
+# guild = get(bot.guilds, name=GUILD)
+# temp_user = get(guild.members, name="Justin_S")
+# print(temp_user)
+# print("hello")
+# await temp_user.move_to(voice_channels="workgroup1")
+# await temp_user.edit(voice_channels="workgroup1")
+
+# @bot.event
+# async def on_ready():
+#     server = get(bot.guilds, name=GUILD)
+#     roles = server.roles
+#     print(roles[4])
+#     print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+    # for group in groups:
+    #     for user in groups[group]:
+    #         users = get(bot.users)
+    #         if users == discord.user:
+    #             print(user)
+
+'''
+
+Discord CLIENT crap:
+
+'''
+
+# client = discord.Client()
+
+# @client.event
+# async def on_ready():
+#     guild = discord.utils.get(client.guilds, name=GUILD)
+#     print(
+#         f'{client.user} has connected to Discord!\n'
+#         f'{guild.name}'
+#     )
+    # print(guild.roles[4])
+    # temp_user = get(guild.members, name="Justin_S")
+    # print(guild.members)
+    # print(temp_user)
