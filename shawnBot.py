@@ -27,6 +27,10 @@ with open('workgroups.json') as groups_file:
     fd = json.load(groups_file)
     groups = fd['groups']
 
+with open('kitteh.json') as kitteh_file:
+    fd = json.load(kitteh_file)
+    kitty = fd['kitteh']
+
 def get_all_members_name(guild):
     for member in guild.member:
         yield member.name
@@ -86,7 +90,9 @@ async def crank(ctx):
 
 @bot.command(name='shawn', help='He\'s the kitty, the very bestest kitty.')
 async def shawn(ctx):
+    response = random.choice(kitty)
     await ctx.send("KITTEH!!!")
+    await ctx.send(response)
 
 @bot.command(name='restart', help='Take a catnap')
 async def restart(ctx):
